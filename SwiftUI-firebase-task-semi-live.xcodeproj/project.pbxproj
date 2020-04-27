@@ -13,6 +13,7 @@
 		A443B03624569E100005DC7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A443B03524569E100005DC7E /* Assets.xcassets */; };
 		A443B03924569E100005DC7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A443B03824569E100005DC7E /* Preview Assets.xcassets */; };
 		A443B03C24569E100005DC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A443B03A24569E100005DC7E /* LaunchScreen.storyboard */; };
+		A443B04D2456A12D0005DC7E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443B04C2456A12D0005DC7E /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A443B03824569E100005DC7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A443B03B24569E100005DC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A443B03D24569E100005DC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A443B04C2456A12D0005DC7E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A443B02E24569E0C0005DC7E /* SwiftUI-firebase-task-semi-live */ = {
 			isa = PBXGroup;
 			children = (
+				A443B04B2456A02C0005DC7E /* Model */,
 				A443B02F24569E0C0005DC7E /* AppDelegate.swift */,
 				A443B03124569E0C0005DC7E /* SceneDelegate.swift */,
 				A443B03324569E0C0005DC7E /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				A443B03824569E100005DC7E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A443B04B2456A02C0005DC7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A443B04C2456A12D0005DC7E /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A443B04D2456A12D0005DC7E /* Task.swift in Sources */,
 				A443B03024569E0C0005DC7E /* AppDelegate.swift in Sources */,
 				A443B03224569E0C0005DC7E /* SceneDelegate.swift in Sources */,
 				A443B03424569E0C0005DC7E /* ContentView.swift in Sources */,
