@@ -26,7 +26,7 @@ class TaskCellViewModel: ObservableObject, Identifiable {
         .assign(to: \.completionStateIconName , on: self) // store task.completed to completionStateIconName
         .store(in: &cancellables)
         
-        $task.map { task in
+        $task.compactMap { task in
             task.id
         }
         .assign(to: \.id , on: self)

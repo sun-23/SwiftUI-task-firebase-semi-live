@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569C4D31BAD917C0026AFEDF /* Pods_SwiftUI_firebase_task_semi_live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515D87BCE728ACADFC897526 /* Pods_SwiftUI_firebase_task_semi_live.framework */; };
 		A443B03024569E0C0005DC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443B02F24569E0C0005DC7E /* AppDelegate.swift */; };
 		A443B03224569E0C0005DC7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443B03124569E0C0005DC7E /* SceneDelegate.swift */; };
 		A443B03424569E0C0005DC7E /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443B03324569E0C0005DC7E /* TaskListView.swift */; };
@@ -16,9 +17,13 @@
 		A443B04D2456A12D0005DC7E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A443B04C2456A12D0005DC7E /* Task.swift */; };
 		A4B62AD42456CA3400981BD8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B62AD32456CA3400981BD8 /* TaskCellViewModel.swift */; };
 		A4B62AD62456D74D00981BD8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B62AD52456D74D00981BD8 /* TaskListViewModel.swift */; };
+		A4B62ADC245E957E00981BD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B62ADB245E957E00981BD8 /* GoogleService-Info.plist */; };
+		A4B62ADF245E9F8700981BD8 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B62ADE245E9F8700981BD8 /* TaskRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		515D87BCE728ACADFC897526 /* Pods_SwiftUI_firebase_task_semi_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_firebase_task_semi_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634F6E430648E8DAFAB6DAFC /* Pods-SwiftUI-firebase-task-semi-live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-firebase-task-semi-live.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-firebase-task-semi-live/Pods-SwiftUI-firebase-task-semi-live.release.xcconfig"; sourceTree = "<group>"; };
 		A443B02C24569E0C0005DC7E /* SwiftUI-firebase-task-semi-live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-firebase-task-semi-live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A443B02F24569E0C0005DC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A443B03124569E0C0005DC7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		A443B04C2456A12D0005DC7E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A4B62AD32456CA3400981BD8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		A4B62AD52456D74D00981BD8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		A4B62ADB245E957E00981BD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4B62ADE245E9F8700981BD8 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		B5F6D7D09A36F5B632795138 /* Pods-SwiftUI-firebase-task-semi-live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-firebase-task-semi-live.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-firebase-task-semi-live/Pods-SwiftUI-firebase-task-semi-live.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569C4D31BAD917C0026AFEDF /* Pods_SwiftUI_firebase_task_semi_live.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C40EC37A61AC0AEA1C9E30B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515D87BCE728ACADFC897526 /* Pods_SwiftUI_firebase_task_semi_live.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		437D5ADC35A27AA210110840 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5F6D7D09A36F5B632795138 /* Pods-SwiftUI-firebase-task-semi-live.debug.xcconfig */,
+				634F6E430648E8DAFAB6DAFC /* Pods-SwiftUI-firebase-task-semi-live.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A443B02324569E0C0005DC7E = {
 			isa = PBXGroup;
 			children = (
 				A443B02E24569E0C0005DC7E /* SwiftUI-firebase-task-semi-live */,
 				A443B02D24569E0C0005DC7E /* Products */,
+				437D5ADC35A27AA210110840 /* Pods */,
+				0C40EC37A61AC0AEA1C9E30B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +91,14 @@
 			isa = PBXGroup;
 			children = (
 				A443B04E2456A5AA0005DC7E /* App */,
+				A4B62ADD245E9F2A00981BD8 /* Repositories */,
 				A443B04B2456A02C0005DC7E /* Model */,
 				A4B62AD22456C85300981BD8 /* ViewModels */,
 				A443B04F2456A5BE0005DC7E /* Views */,
 				A443B03524569E100005DC7E /* Assets.xcassets */,
 				A443B03A24569E100005DC7E /* LaunchScreen.storyboard */,
 				A443B03D24569E100005DC7E /* Info.plist */,
+				A4B62ADB245E957E00981BD8 /* GoogleService-Info.plist */,
 				A443B03724569E100005DC7E /* Preview Content */,
 			);
 			path = "SwiftUI-firebase-task-semi-live";
@@ -116,6 +146,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		A4B62ADD245E9F2A00981BD8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A4B62ADE245E9F8700981BD8 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A443B04024569E100005DC7E /* Build configuration list for PBXNativeTarget "SwiftUI-firebase-task-semi-live" */;
 			buildPhases = (
+				ADCCC7A83D44B1B99A589369 /* [CP] Check Pods Manifest.lock */,
 				A443B02824569E0C0005DC7E /* Sources */,
 				A443B02924569E0C0005DC7E /* Frameworks */,
 				A443B02A24569E0C0005DC7E /* Resources */,
+				BAD9D92F69AE347428262576 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,12 +215,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A443B03C24569E100005DC7E /* LaunchScreen.storyboard in Resources */,
+				A4B62ADC245E957E00981BD8 /* GoogleService-Info.plist in Resources */,
 				A443B03924569E100005DC7E /* Preview Assets.xcassets in Resources */,
 				A443B03624569E100005DC7E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADCCC7A83D44B1B99A589369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-firebase-task-semi-live-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD9D92F69AE347428262576 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-firebase-task-semi-live/Pods-SwiftUI-firebase-task-semi-live-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-firebase-task-semi-live/Pods-SwiftUI-firebase-task-semi-live-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-firebase-task-semi-live/Pods-SwiftUI-firebase-task-semi-live-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A443B02824569E0C0005DC7E /* Sources */ = {
@@ -193,6 +276,7 @@
 				A443B03424569E0C0005DC7E /* TaskListView.swift in Sources */,
 				A4B62AD42456CA3400981BD8 /* TaskCellViewModel.swift in Sources */,
 				A4B62AD62456D74D00981BD8 /* TaskListViewModel.swift in Sources */,
+				A4B62ADF245E9F8700981BD8 /* TaskRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +410,7 @@
 		};
 		A443B04124569E100005DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F6D7D09A36F5B632795138 /* Pods-SwiftUI-firebase-task-semi-live.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +431,7 @@
 		};
 		A443B04224569E100005DC7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634F6E430648E8DAFAB6DAFC /* Pods-SwiftUI-firebase-task-semi-live.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
