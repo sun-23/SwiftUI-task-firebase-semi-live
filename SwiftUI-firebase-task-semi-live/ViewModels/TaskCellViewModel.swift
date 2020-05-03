@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 class TaskCellViewModel: ObservableObject, Identifiable {
+    @Published var taskRepository = TaskRepository()
     @Published var task: Task
     
     var id: String = ""
@@ -31,5 +32,14 @@ class TaskCellViewModel: ObservableObject, Identifiable {
         }
         .assign(to: \.id , on: self)
         .store(in: &cancellables)
+        
+        // anytime change task update
+        $task
+            .dropFirst()
+            .debounce(for: 0.8, scheduler: RunLoop.main) // wait 0.8 sec
+            .sink { task in
+                self.taskRepository.updateTask(task: task)
+            }
+            .store(in: &cancellables)
     }
 }

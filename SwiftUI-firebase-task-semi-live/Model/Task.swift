@@ -14,6 +14,7 @@ struct Task: Codable, Identifiable {
     @DocumentID var id: String? //DocumentID from firestore document
     var title: String
     var completed: Bool
+    @ServerTimestamp var createdTime: Timestamp?
 }
 
 #if DEBUG

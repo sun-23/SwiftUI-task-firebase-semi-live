@@ -57,9 +57,13 @@ struct TaskCell: View {
     
     var body: some View {
         HStack {
-            Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill" : "circle")
+            Button(action: {
+                self.taskCellVM.task.completed.toggle()
+            },label: {
+                Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill" : "circle")
                 .resizable()
                 .frame(width: 20, height: 20)
+            })
             TextField("Enter the task title",text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task)
             })
