@@ -16,8 +16,8 @@ struct TaskListView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 List {
-                    ForEach(taskListVM.taskCellViewModels) { taskListVM in
-                        TaskCell(taskCellVM: taskListVM)
+                    ForEach(taskListVM.taskCellViewModels) { taskCellVM in
+                        TaskCell(taskCellVM: taskCellVM)
                     }
                     if presentAddNewItem {
                         TaskCell(taskCellVM: TaskCellViewModel(task: Task(title: "", completed: false))) { task in
